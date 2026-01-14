@@ -9,21 +9,33 @@ import { motion } from "framer-motion";
 // Assets
 import heroBg from "@assets/generated_images/vintage_barber_pole_stripes_texture.png";
 import brendaImg from "@assets/generated_images/friendly_senior_female_barber_portrait.png";
+import storefrontImg from "@assets/Outside_1_1768358296452.jpg";
 
 export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-secondary">
-        {/* Background Overlay */}
+        {/* Background Image - Storefront */}
         <div 
-          className="absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none"
+          className="absolute inset-0 z-0 scale-105"
+          style={{ 
+            backgroundImage: `url(${storefrontImg})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center',
+            filter: 'brightness(0.3) contrast(1.1)'
+          }}
+        />
+        
+        {/* Pattern Overlay */}
+        <div 
+          className="absolute inset-0 opacity-15 mix-blend-overlay pointer-events-none z-10"
           style={{ backgroundImage: `url(${heroBg})`, backgroundSize: '400px' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/70 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/60 to-transparent z-20" />
         
         {/* Content */}
-        <div className="container relative z-20 px-4 text-center">
+        <div className="container relative z-30 px-4 text-center">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,7 +49,7 @@ export default function Home() {
               Classic Cuts.<br />
               <span className="text-primary italic">Family Friendly.</span>
             </h1>
-            <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto font-bold tracking-wide leading-relaxed mb-10 uppercase">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-bold tracking-wide leading-relaxed mb-10 uppercase drop-shadow-md">
               Experience the neighborhood atmosphere where every haircut comes with a smile.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -46,7 +58,7 @@ export default function Home() {
                   Book Appointment
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/20 bg-white/5 text-white hover:bg-white/10 text-lg px-12 py-8 backdrop-blur-sm w-full sm:w-auto rounded-none font-black uppercase tracking-widest">
+              <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 text-lg px-12 py-8 backdrop-blur-md w-full sm:w-auto rounded-none font-black uppercase tracking-widest">
                 <Link href="/contact">
                   View Location
                 </Link>
