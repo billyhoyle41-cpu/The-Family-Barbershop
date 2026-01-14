@@ -118,15 +118,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="font-black uppercase tracking-[0.2em] text-primary mb-6 text-xs">Hours</h4>
               <ul className="space-y-3 text-white/90 font-bold tracking-wide">
                 <li className="flex justify-between border-b border-white/10 pb-2">
-                  <span className="uppercase text-[10px] tracking-widest text-white/50">Mon - Fri</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span className="uppercase text-[10px] tracking-widest text-white/50">Tue - Fri</span>
+                  <span>9:00 AM - 5:00 PM</span>
                 </li>
                 <li className="flex justify-between border-b border-white/10 pb-2">
                   <span className="uppercase text-[10px] tracking-widest text-white/50">Saturday</span>
-                  <span>9:00 AM - 4:00 PM</span>
+                  <span>9:00 AM - 3:00 PM</span>
                 </li>
                 <li className="flex justify-between text-white/30">
-                  <span className="uppercase text-[10px] tracking-widest">Sunday</span>
+                  <span className="uppercase text-[10px] tracking-widest">Sun - Mon</span>
                   <span>Closed</span>
                 </li>
               </ul>

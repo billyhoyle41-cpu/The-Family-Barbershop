@@ -64,15 +64,15 @@ export default function Contact() {
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex justify-between items-center text-lg">
-                      <span className="text-muted-foreground">Monday - Friday</span>
-                      <span className="font-bold text-secondary">9:00 AM - 6:00 PM</span>
+                      <span className="text-muted-foreground">Tuesday - Friday</span>
+                      <span className="font-bold text-secondary">9:00 AM - 5:00 PM</span>
                     </li>
                     <li className="flex justify-between items-center text-lg">
                       <span className="text-muted-foreground">Saturday</span>
-                      <span className="font-bold text-secondary">9:00 AM - 4:00 PM</span>
+                      <span className="font-bold text-secondary">9:00 AM - 3:00 PM</span>
                     </li>
                     <li className="flex justify-between items-center text-lg opacity-60">
-                      <span className="text-muted-foreground">Sunday</span>
+                      <span className="text-muted-foreground">Sunday - Monday</span>
                       <span className="font-medium">Closed</span>
                     </li>
                   </ul>
