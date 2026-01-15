@@ -46,8 +46,8 @@ export default function Home() {
               Grosse Pointe Tradition
             </Badge>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black text-white mb-6 tracking-tighter uppercase leading-[0.9] drop-shadow-2xl">
-              The Family<br />
-              <span className="text-primary italic">Barbershop.</span>
+              <span className="font-black">The Family</span><br />
+              <span className="text-primary italic font-black">Barbershop.</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto font-bold tracking-wide leading-relaxed mb-10 uppercase drop-shadow-md">
               Experience the neighborhood atmosphere where every haircut comes with a smile.
