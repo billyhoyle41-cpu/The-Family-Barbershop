@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="bg-secondary text-white py-32 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-barber-pole opacity-10"></div>
           <div className="container mx-auto px-4 relative z-10">
-            <h1 className="text-6xl md:text-8xl font-display font-black mb-6 uppercase tracking-tighter leading-none">Contact & Hours</h1>
+            <h1 className="text-6xl md:text-8xl font-display font-black mb-6 uppercase tracking-tighter leading-none text-white">Contact & Hours</h1>
             <p className="text-xs uppercase font-black tracking-[0.4em] text-primary">Visit us in Grosse Pointe Woods</p>
           </div>
         </div>
