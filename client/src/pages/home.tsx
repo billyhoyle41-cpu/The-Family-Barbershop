@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* Quick Info Bar */}
       <section className="bg-white relative z-30 -mt-10 container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-0 shadow-2xl border border-border">
+        <div className="grid md:grid-cols-3 gap-0 shadow-2xl border-y border-border">
           <div className="bg-background p-10 text-center border-b md:border-b-0 md:border-r border-border group hover:bg-primary transition-all duration-300">
             <div className="bg-primary/10 w-16 h-16 rounded-none flex items-center justify-center mx-auto mb-6 text-primary group-hover:bg-white group-hover:text-primary transition-colors">
               <Clock className="h-8 w-8" />
