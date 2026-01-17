@@ -104,22 +104,31 @@ export default function Home() {
             <p className="text-xs uppercase font-black tracking-[0.3em] text-muted-foreground">Clean, professional cuts at fair prices.</p>
           </div>
 
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
             <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden">
               <div className="h-2 bg-barber-pole w-full" />
-              <CardContent className="p-12 flex flex-col items-center text-center">
-                <h3 className="font-display font-black text-4xl mb-4 text-secondary uppercase tracking-tighter">Adult Cut</h3>
-                <div className="text-7xl font-black text-primary my-6 tracking-tighter">$21</div>
-                <p className="text-muted-foreground font-bold uppercase text-xs tracking-widest">Precision cut & neck shave</p>
+              <CardContent className="p-10 flex flex-col items-center text-center">
+                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Adult Cut</h3>
+                <div className="text-6xl font-black text-primary my-4 tracking-tighter">$21</div>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest">Precision cut & neck shave</p>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden">
               <div className="h-2 bg-barber-pole w-full" />
-              <CardContent className="p-12 flex flex-col items-center text-center">
-                <h3 className="font-display font-black text-4xl mb-4 text-secondary uppercase tracking-tighter">Kids Cut</h3>
-                <div className="text-7xl font-black text-primary my-6 tracking-tighter">$16</div>
-                <p className="text-muted-foreground font-bold uppercase text-xs tracking-widest">Patient service for little ones</p>
+              <CardContent className="p-10 flex flex-col items-center text-center">
+                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Children</h3>
+                <div className="text-6xl font-black text-primary my-4 tracking-tighter">$17</div>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest">8th Grade and Under</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden">
+              <div className="h-2 bg-barber-pole w-full" />
+              <CardContent className="p-10 flex flex-col items-center text-center">
+                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Seniors</h3>
+                <div className="text-6xl font-black text-primary my-4 tracking-tighter">$17</div>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest">Special Rate</p>
               </CardContent>
             </Card>
           </div>
