@@ -108,27 +108,33 @@ export default function Home() {
             <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden flex flex-col">
               <div className="h-2 bg-barber-pole w-full" />
               <CardContent className="p-10 flex flex-col items-center text-center flex-grow">
-                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter min-h-[4rem] flex items-center justify-center">Adults</h3>
-                <div className="text-6xl font-black text-primary my-4 tracking-tighter">$21</div>
-                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest mt-auto">Precision cut & neck shave</p>
+                <div className="min-h-[12rem] flex flex-col items-center justify-center w-full">
+                  <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Adults</h3>
+                  <div className="text-6xl font-black text-primary tracking-tighter">$21</div>
+                </div>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest mt-auto pt-4">Precision cut & neck shave</p>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden flex flex-col">
               <div className="h-2 bg-barber-pole w-full" />
               <CardContent className="p-10 flex flex-col items-center text-center flex-grow">
-                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter min-h-[4rem] flex items-center justify-center">Children</h3>
-                <div className="text-6xl font-black text-primary my-4 tracking-tighter">$17</div>
-                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest mt-auto">8th Grade and Under</p>
+                <div className="min-h-[12rem] flex flex-col items-center justify-center w-full">
+                  <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Children</h3>
+                  <div className="text-6xl font-black text-primary tracking-tighter">$17</div>
+                </div>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest mt-auto pt-4">8th Grade and Under</p>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden flex flex-col">
               <div className="h-2 bg-barber-pole w-full" />
               <CardContent className="p-10 flex flex-col items-center text-center flex-grow">
-                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter min-h-[4rem] flex items-center justify-center">Senior Special</h3>
-                <div className="text-6xl font-black text-primary my-4 tracking-tighter">$17</div>
-                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest leading-tight mt-auto">Tue / Wed / Thu (10a - 2p)</p>
+                <div className="min-h-[12rem] flex flex-col items-center justify-center w-full">
+                  <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Senior Special</h3>
+                  <div className="text-6xl font-black text-primary tracking-tighter">$17</div>
+                </div>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest leading-tight mt-auto pt-4">Tue / Wed / Thu (10a - 2p)</p>
               </CardContent>
             </Card>
           </div>
