@@ -29,7 +29,7 @@ export default function Booking() {
               <div className="w-full min-h-[800px]">
                 <iframe
                   src="https://app.briancrossley.com/widget/form/36MH4ACZbsCs887CegSs"
-                  style={{ width: "100%", height: "800px", border: "none" }}
+                  style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
                   id="inline-36MH4ACZbsCs887CegSs"
                   data-layout='{"id":"INLINE"}'
                   data-trigger-type="alwaysShow"
