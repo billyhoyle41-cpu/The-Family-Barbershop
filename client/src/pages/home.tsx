@@ -131,7 +131,7 @@ export default function Home() {
               <div className="h-2 bg-barber-pole w-full" />
               <CardContent className="p-10 flex flex-col items-center text-center flex-grow">
                 <div className="min-h-[12rem] flex flex-col items-center justify-center w-full">
-                  <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Senior Special</h3>
+                  <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Seniors Special</h3>
                   <div className="text-6xl font-black text-primary tracking-tighter">$17</div>
                 </div>
                 <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest leading-tight mt-auto pt-4">Tue / Wed / Thu (10a - 2p)</p>
