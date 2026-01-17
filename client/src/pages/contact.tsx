@@ -5,16 +5,16 @@ import { MapPin, Phone, Clock, Mail } from "lucide-react";
 export default function Contact() {
   return (
     <Layout>
-      <div className="min-h-screen bg-background">
-        <div className="bg-secondary text-white py-20 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-barber-pole opacity-5"></div>
+      <div className="min-h-screen bg-muted/30 pb-20">
+        <div className="bg-secondary text-white py-32 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-barber-pole opacity-10"></div>
           <div className="container mx-auto px-4 relative z-10">
-            <h1 className="text-5xl md:text-6xl font-display mb-4">Contact & Location</h1>
-            <p className="text-xl text-white/80 font-serif">Visit us in Grosse Pointe Woods</p>
+            <h1 className="text-6xl md:text-8xl font-display font-black mb-6 uppercase tracking-tighter leading-none">Contact & Hours</h1>
+            <p className="text-xs uppercase font-black tracking-[0.4em] text-primary">Visit us in Grosse Pointe Woods</p>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-16 -mt-10 relative z-20">
+        <div className="container mx-auto px-4 py-16 -mt-16 relative z-20">
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Contact Info */}
             <Card className="shadow-xl border-t-4 border-t-primary h-full">
