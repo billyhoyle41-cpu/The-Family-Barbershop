@@ -108,7 +108,7 @@ export default function Home() {
             <Card className="border-none shadow-2xl rounded-none group hover:-translate-y-2 transition-transform duration-300 overflow-hidden">
               <div className="h-2 bg-barber-pole w-full" />
               <CardContent className="p-10 flex flex-col items-center text-center">
-                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Adult Cut</h3>
+                <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Adults</h3>
                 <div className="text-6xl font-black text-primary my-4 tracking-tighter">$21</div>
                 <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest">Precision cut & neck shave</p>
               </CardContent>
@@ -128,7 +128,7 @@ export default function Home() {
               <CardContent className="p-10 flex flex-col items-center text-center">
                 <h3 className="font-display font-black text-3xl mb-4 text-secondary uppercase tracking-tighter">Seniors</h3>
                 <div className="text-6xl font-black text-primary my-4 tracking-tighter">$17</div>
-                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest">Special Rate</p>
+                <p className="text-muted-foreground font-bold uppercase text-[10px] tracking-widest leading-tight">Special Rate<br />Tue / Wed / Thu (10a - 2p)</p>
               </CardContent>
             </Card>
           </div>
