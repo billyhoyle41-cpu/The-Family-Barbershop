@@ -27,21 +27,11 @@ export default function Booking() {
             <div className="h-2 bg-barber-pole w-full" />
             <CardContent className="p-0">
               <div className="w-full min-h-[800px]">
-                <iframe
-                  src="https://app.briancrossley.com/widget/form/36MH4ACZbsCs887CegSs"
-                  style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
-                  id="inline-36MH4ACZbsCs887CegSs"
-                  data-layout='{"id":"INLINE"}'
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Brenda's Appointments"
-                  data-height="785"
-                  data-layout-iframe-id="inline-36MH4ACZbsCs887CegSs"
-                  data-form-id="36MH4ACZbsCs887CegSs"
+                <iframe 
+                  src="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" 
+                  style={{ width: "100%", height: "800px", border: "none", overflow: "hidden" }} 
+                  scrolling="no" 
+                  id="qyfrHvgNL27l6DS0tPsd_1768752698600"
                   title="Brenda's Appointments"
                 />
               </div>
