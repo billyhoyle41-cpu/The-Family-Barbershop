@@ -45,7 +45,7 @@ export default function Home() {
             <Badge variant="outline" className="border-primary text-primary bg-primary/10 px-6 py-2 text-xs uppercase font-black tracking-[0.3em] mb-4 rounded-none">
               Grosse Pointe Tradition
             </Badge>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black text-white mb-6 tracking-tighter uppercase leading-[0.9] drop-shadow-2xl">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black text-white mb-6 tracking-tight md:tracking-tighter uppercase leading-[0.9] drop-shadow-2xl">
               <span className="font-black">The Family</span><br />
               <span className="text-primary italic font-black">Barbershop.</span>
             </h1>
