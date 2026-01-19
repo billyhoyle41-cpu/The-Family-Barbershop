@@ -80,22 +80,34 @@ export default function Contact() {
               </CardContent>
             </Card>
 
-            {/* Map Placeholder - In a real app, embed Google Maps iframe */}
-            <div className="h-full min-h-[400px] bg-muted rounded-lg overflow-hidden border border-border shadow-lg relative group">
-              {/* Using a static map image or placeholder since we can't embed actual interactive maps without API keys sometimes, but styling it to look like a map area */}
-              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
+            {/* Google Maps Embed */}
+            <div className="h-full min-h-[400px] bg-muted rounded-none overflow-hidden border-y border-border shadow-2xl relative group">
+              <iframe
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src={`https://www.google.com/maps/embed/v1/place?key=REPLACE_WITH_GOOGLE_MAPS_API_KEY&q=19865+Mack+Ave,Grosse+Pointe+Woods,MI+48236`}
+              ></iframe>
+              {/* Fallback Overlay if no API key */}
+              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity">
                 <div className="text-center p-6">
                   <MapPin className="h-16 w-16 text-primary mx-auto mb-4 animate-bounce" />
-                  <h3 className="font-display text-2xl text-secondary mb-2">19865 Mack Ave</h3>
-                  <p className="text-muted-foreground">Grosse Pointe Woods, MI</p>
+                  <h3 className="font-display text-2xl text-secondary mb-2 uppercase tracking-tighter">19865 Mack Ave</h3>
+                  <p className="text-muted-foreground uppercase font-black text-[10px] tracking-widest">Grosse Pointe Woods, MI</p>
                 </div>
               </div>
               
-              {/* Simulated Map UI Elements */}
-              <div className="absolute top-4 right-4 bg-white p-2 rounded shadow text-xs font-bold text-gray-500">Map Data &copy; 2025</div>
-              <div className="absolute bottom-4 right-4 bg-white px-4 py-2 rounded shadow text-sm font-bold text-primary hover:bg-gray-50 cursor-pointer">
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=19865+Mack+Ave,Grosse+Pointe+Woods,MI+48236" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute bottom-4 right-4 bg-primary text-white px-6 py-3 shadow-2xl text-xs font-black uppercase tracking-widest hover:bg-secondary transition-colors"
+              >
                 Open in Google Maps
-              </div>
+              </a>
             </div>
           </div>
         </div>
