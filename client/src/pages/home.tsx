@@ -45,7 +45,7 @@ export default function Home() {
             <Badge variant="outline" className="border-primary text-primary bg-primary/10 px-6 py-2 text-xs uppercase font-black tracking-[0.3em] mb-4 rounded-none">
               Grosse Pointe Tradition
             </Badge>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-black text-white mb-6 tracking-tight md:tracking-tighter uppercase leading-[0.9] drop-shadow-2xl">
+            <h1 className="text-5xl md:text-8xl lg:text-9xl font-display font-black text-white mb-6 tracking-tight md:tracking-tighter uppercase leading-[0.9] drop-shadow-2xl px-4 md:px-0">
               <span className="font-black">The Family</span><br />
               <span className="text-primary italic font-black">Barbershop.</span>
             </h1>
@@ -198,9 +198,9 @@ export default function Home() {
       {/* CTA */}
       <section className="py-32 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-barber-pole opacity-20 scale-150 animate-pulse" />
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-5xl md:text-8xl font-display font-black text-white mb-12 uppercase tracking-tighter">Fresh Cut?</h2>
-          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-black text-2xl px-16 py-10 shadow-2xl rounded-none uppercase tracking-widest">
+        <div className="container mx-auto px-4 text-center relative z-10 overflow-hidden">
+          <h2 className="text-4xl md:text-8xl font-display font-black text-white mb-12 uppercase tracking-tight md:tracking-tighter px-2">Fresh Cut?</h2>
+          <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-black text-xl md:text-2xl px-8 md:px-16 py-8 md:py-10 shadow-2xl rounded-none uppercase tracking-widest whitespace-normal h-auto">
             <a href="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" target="_blank" rel="noopener noreferrer">
               Book Appointment Now
             </a>
