@@ -1,6 +1,7 @@
 import Layout from "@/components/layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { useEffect } from "react";
+import { Link } from "wouter";
 
 export default function Booking() {
   useEffect(() => {
@@ -38,8 +39,13 @@ export default function Booking() {
             </CardContent>
           </Card>
 
-          <div className="text-center mt-8 text-muted-foreground uppercase font-bold text-[10px] tracking-[0.2em]">
-            Prefer to call? <a href="tel:3137435515" className="text-primary hover:underline">(313) 743-5515</a>
+          <div className="text-center mt-8 space-y-4">
+            <div className="text-muted-foreground uppercase font-bold text-[10px] tracking-[0.2em]">
+              Prefer to call? <a href="tel:3137435515" className="text-primary hover:underline">(313) 743-5515</a>
+            </div>
+            <div className="max-w-2xl mx-auto p-4 border border-border bg-white text-[10px] text-muted-foreground uppercase tracking-widest leading-relaxed">
+              By providing your phone number, you agree to receive text messages from The Family Barbershop regarding your appointment. Message and data rates may apply. Message frequency varies. Reply STOP to opt-out. View our <Link href="/privacy" className="underline hover:text-primary">Privacy Policy</Link>.
+            </div>
           </div>
         </div>
       </div>
