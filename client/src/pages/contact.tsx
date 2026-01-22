@@ -89,16 +89,8 @@ export default function Contact() {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                src={`https://www.google.com/maps/embed/v1/place?key=REPLACE_WITH_GOOGLE_MAPS_API_KEY&q=19865+Mack+Ave,Grosse+Pointe+Woods,MI+48236`}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.538183493722!2d-82.9092497234241!3d42.43756207118671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d5b999b9e6e5%3A0x9d9d9d9d9d9d9d9d!2s19865%20Mack%20Ave%2C%20Grosse%20Pointe%20Woods%2C%20MI%2048236!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
               ></iframe>
-              {/* Fallback Overlay if no API key */}
-              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity">
-                <div className="text-center p-6">
-                  <MapPin className="h-16 w-16 text-primary mx-auto mb-4 animate-bounce" />
-                  <h3 className="font-display text-2xl text-secondary mb-2 uppercase tracking-tighter">19865 Mack Ave</h3>
-                  <p className="text-muted-foreground uppercase font-black text-[10px] tracking-widest">Grosse Pointe Woods, MI</p>
-                </div>
-              </div>
               
               <a 
                 href="https://www.google.com/maps/search/?api=1&query=19865+Mack+Ave,Grosse+Pointe+Woods,MI+48236" 
