@@ -141,8 +141,62 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Google Reviews + Testimonials */}
+      {/* Meet Brenda Section */}
       <section className="py-32 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="absolute -inset-4 border-8 border-primary rounded-none z-0" />
+              <img 
+                src={brendaImg} 
+                alt="Brenda, Owner of The Family Barbershop" 
+                className="relative z-10 w-full h-auto object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000 shadow-2xl"
+              />
+            </motion.div>
+
+            <div className="space-y-8">
+              <div className="inline-block bg-primary text-white px-6 py-2 rounded-none font-black uppercase tracking-[0.3em] text-xs">
+                The Legend
+              </div>
+              <h2 className="text-6xl md:text-8xl font-display font-black text-secondary uppercase tracking-tighter leading-none">Brenda</h2>
+              <h3 className="text-2xl font-bold text-primary uppercase tracking-widest italic">A Grosse Pointe Icon</h3>
+              
+              <div className="space-y-6 text-lg text-muted-foreground font-medium leading-relaxed uppercase text-xs tracking-widest">
+                <p>
+                  Brenda is the owner and head barber of The Family Barbershop. Known for her skill, consistency, and friendly personality, she has been serving generations of local families.
+                </p>
+                <p>
+                  For many customers, a visit isn’t complete without sitting in Brenda’s chair. You're not just a customer; you're family.
+                </p>
+              </div>
+
+              <div className="pt-8 flex flex-wrap gap-8">
+                <div className="flex items-center gap-4">
+                  <div className="bg-secondary text-white p-3 rounded-none">
+                    <User className="h-6 w-6" />
+                  </div>
+                  <span className="font-black uppercase tracking-widest text-xs">Owner Operated</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-secondary text-white p-3 rounded-none">
+                    <MapPin className="h-6 w-6" />
+                  </div>
+                  <span className="font-black uppercase tracking-widest text-xs">Local Staple</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Google Reviews + Testimonials */}
+      <section className="py-32 bg-muted/30 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <h2 className="text-5xl md:text-7xl font-display font-black text-secondary mb-6 uppercase tracking-tighter">Reviews</h2>
@@ -158,18 +212,18 @@ export default function Home() {
                   <div>
                     <h3 className="font-display font-black text-3xl text-secondary uppercase tracking-tighter">Google Reviews</h3>
                     <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest mt-2">
-                      Live reviews widget (needs your widget embed)
+                      Live reviews widget (paste embed code)
                     </p>
                   </div>
                   <div className="text-right">
-                    <div className="text-primary font-black text-4xl leading-none">5.0</div>
+                    <div className="text-primary font-black text-4xl leading-none" data-testid="text-google-rating">5.0</div>
                     <div className="text-muted-foreground uppercase font-black text-[10px] tracking-widest mt-1">Rating</div>
                   </div>
                 </div>
 
                 <div className="border border-border bg-muted/30 p-6 rounded-none">
                   <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest leading-relaxed">
-                    To show live Google reviews, paste your Google Reviews widget/embed code (or an Elfsight/Google widget ID) and I’ll wire it in here.
+                    Send me your Google Reviews widget embed snippet (or provider + widget ID) and I’ll place the live feed here.
                   </p>
                 </div>
 
@@ -230,60 +284,6 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Brenda Section */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative"
-            >
-              <div className="absolute -inset-4 border-8 border-primary rounded-none z-0" />
-              <img 
-                src={brendaImg} 
-                alt="Brenda, Owner of The Family Barbershop" 
-                className="relative z-10 w-full h-auto object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000 shadow-2xl"
-              />
-            </motion.div>
-
-            <div className="space-y-8">
-              <div className="inline-block bg-primary text-white px-6 py-2 rounded-none font-black uppercase tracking-[0.3em] text-xs">
-                The Legend
-              </div>
-              <h2 className="text-6xl md:text-8xl font-display font-black text-secondary uppercase tracking-tighter leading-none">Brenda</h2>
-              <h3 className="text-2xl font-bold text-primary uppercase tracking-widest italic">A Grosse Pointe Icon</h3>
-              
-              <div className="space-y-6 text-lg text-muted-foreground font-medium leading-relaxed uppercase text-xs tracking-widest">
-                <p>
-                  Brenda is the owner and head barber of The Family Barbershop. Known for her skill, consistency, and friendly personality, she has been serving generations of local families.
-                </p>
-                <p>
-                  For many customers, a visit isn’t complete without sitting in Brenda’s chair. You're not just a customer; you're family.
-                </p>
-              </div>
-
-              <div className="pt-8 flex flex-wrap gap-8">
-                <div className="flex items-center gap-4">
-                  <div className="bg-secondary text-white p-3 rounded-none">
-                    <User className="h-6 w-6" />
-                  </div>
-                  <span className="font-black uppercase tracking-widest text-xs">Owner Operated</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-secondary text-white p-3 rounded-none">
-                    <MapPin className="h-6 w-6" />
-                  </div>
-                  <span className="font-black uppercase tracking-widest text-xs">Local Staple</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
