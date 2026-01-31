@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 // Assets
 import heroBg from "@assets/generated_images/vintage_barber_pole_stripes_texture.png";
-import barberImg from "@/assets/images/young-barber-portrait.png";
+import brendaImg from "@assets/Gemini_Generated_Image_hexs7ahexs7ahexs_1769830243622.png";
 import storefrontImg from "@assets/Outside_1_1768358296452.jpg";
 
 export default function Home() {
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meet the Barber Section */}
+      {/* Meet Brenda Section */}
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
@@ -154,25 +154,25 @@ export default function Home() {
             >
               <div className="absolute -inset-4 border-8 border-primary rounded-none z-0" />
               <img 
-                src={barberImg} 
-                alt="Professional barber at The Family Barbershop" 
+                src={brendaImg} 
+                alt="Brenda at The Family Barbershop" 
                 className="relative z-10 w-full h-auto object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-1000 shadow-2xl"
               />
             </motion.div>
 
             <div className="space-y-8">
               <div className="inline-block bg-primary text-white px-6 py-2 rounded-none font-black uppercase tracking-[0.3em] text-xs">
-                Meet the Barber
+                The Legend
               </div>
-              <h2 className="text-6xl md:text-8xl font-display font-black text-secondary uppercase tracking-tighter leading-none">Your Barber</h2>
-              <h3 className="text-2xl font-bold text-primary uppercase tracking-widest italic">Classic Cuts. Modern Detail.</h3>
+              <h2 className="text-6xl md:text-8xl font-display font-black text-secondary uppercase tracking-tighter leading-none">Brenda</h2>
+              <h3 className="text-2xl font-bold text-primary uppercase tracking-widest italic">A Grosse Pointe Icon</h3>
               
               <div className="space-y-6 text-lg text-muted-foreground font-medium leading-relaxed uppercase text-xs tracking-widest">
                 <p>
-                  Clean fades, classic tapers, and crisp lineups—done right, every time.
+                  Brenda is the owner and head barber of The Family Barbershop. Known for her skill, consistency, and friendly personality, she has been serving generations of local families.
                 </p>
                 <p>
-                  Walk in for the neighborhood vibe, leave with a sharp cut and a fresh finish.
+                  For many customers, a visit isn’t complete without sitting in Brenda’s chair. You're not just a customer; you're family.
                 </p>
               </div>
 
