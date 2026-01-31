@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 // Assets
 import heroBg from "@assets/generated_images/vintage_barber_pole_stripes_texture.png";
-import brendaImg from "@assets/Gemini_Generated_Image_hexs7ahexs7ahexs_1769830243622.png";
+import brendaImg from "@assets/IMG_3573_1769830544962.jpg";
 import storefrontImg from "@assets/Outside_1_1768358296452.jpg";
 
 export default function Home() {
