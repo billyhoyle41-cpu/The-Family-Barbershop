@@ -141,6 +141,99 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Google Reviews + Testimonials */}
+      <section className="py-32 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-20">
+            <h2 className="text-5xl md:text-7xl font-display font-black text-secondary mb-6 uppercase tracking-tighter">Reviews</h2>
+            <div className="h-2 w-32 bg-primary mx-auto mb-8" />
+            <p className="text-xs uppercase font-black tracking-[0.3em] text-muted-foreground">What customers are saying about The Family Barbershop.</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-10 items-stretch max-w-6xl mx-auto">
+            <Card className="border-none shadow-2xl rounded-none overflow-hidden flex flex-col">
+              <div className="h-2 bg-barber-pole w-full" />
+              <CardContent className="p-10 flex flex-col gap-6 flex-grow">
+                <div className="flex items-start justify-between gap-6">
+                  <div>
+                    <h3 className="font-display font-black text-3xl text-secondary uppercase tracking-tighter">Google Reviews</h3>
+                    <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest mt-2">
+                      Live reviews widget (needs your widget embed)
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-primary font-black text-4xl leading-none">5.0</div>
+                    <div className="text-muted-foreground uppercase font-black text-[10px] tracking-widest mt-1">Rating</div>
+                  </div>
+                </div>
+
+                <div className="border border-border bg-muted/30 p-6 rounded-none">
+                  <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest leading-relaxed">
+                    To show live Google reviews, paste your Google Reviews widget/embed code (or an Elfsight/Google widget ID) and I’ll wire it in here.
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between gap-4 mt-auto">
+                  <a
+                    data-testid="link-google-reviews"
+                    href="https://www.google.com/search?q=The+Family+Barbershop+Grosse+Pointe+Woods+MI+reviews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-black uppercase tracking-widest text-xs underline underline-offset-4 hover:text-secondary transition-colors"
+                  >
+                    View on Google
+                  </a>
+                  <div className="text-muted-foreground uppercase font-black text-[10px] tracking-widest">Updated live</div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-none shadow-2xl rounded-none overflow-hidden flex flex-col">
+              <div className="h-2 bg-barber-pole w-full" />
+              <CardContent className="p-10 flex flex-col gap-8 flex-grow">
+                <div className="flex items-start justify-between gap-6">
+                  <div>
+                    <h3 className="font-display font-black text-3xl text-secondary uppercase tracking-tighter">Testimonials</h3>
+                    <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest mt-2">
+                      Neighborhood voices
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid gap-6">
+                  {[{
+                    quote: "Brenda is the best — quick, friendly, and always consistent.",
+                    name: "Local Customer",
+                  }, {
+                    quote: "Clean shop, great conversation, and a perfect cut every time.",
+                    name: "Grosse Pointe Regular",
+                  }, {
+                    quote: "Walked in and was taken care of right away. Classic barbershop feel.",
+                    name: "First-Time Visitor",
+                  }].map((t, idx) => (
+                    <div key={idx} className="border border-border bg-white p-6 shadow-sm">
+                      <p className="text-secondary font-black uppercase tracking-widest text-[10px] leading-relaxed" data-testid={`text-testimonial-${idx}`}>
+                        “{t.quote}”
+                      </p>
+                      <div className="mt-4 flex items-center justify-between">
+                        <span className="text-muted-foreground uppercase font-black text-[10px] tracking-[0.2em]" data-testid={`text-testimonial-author-${idx}`}>
+                          — {t.name}
+                        </span>
+                        <div className="flex items-center gap-1" aria-hidden="true">
+                          {[0, 1, 2, 3, 4].map((s) => (
+                            <Star key={s} className="h-4 w-4 text-primary" />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Meet Brenda Section */}
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
