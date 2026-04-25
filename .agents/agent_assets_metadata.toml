@@ -6,3 +6,9 @@ id = "f-x1QbuhtmYizpFZtkfNj"
 uri = "file://client/src/assets/generated_images/hip_younger_female_barber_long_dark_hair.png"
 type = "image"
 title = "hip younger female barber long dark hair"
+
+[[generated]]
+id = "TJxK9CEoejHwDBh5aXLR5"
+uri = "file://attached_assets/generated_images/hip_older_female_barber_glasses.png"
+type = "image"
+title = "hip older female barber glasses"
