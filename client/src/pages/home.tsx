@@ -230,7 +230,7 @@ export default function Home() {
                     <div>
                       <div className="font-bold text-sm text-secondary">The Family Barbershop</div>
                       <div className="text-[10px] text-muted-foreground flex items-center gap-1">
-                        <span>4.9</span>
+                        <span>4.7</span>
                         <div className="flex text-[#FFD700]">
                           <Star className="w-3 h-3 fill-current" />
                           <Star className="w-3 h-3 fill-current" />
@@ -238,7 +238,7 @@ export default function Home() {
                           <Star className="w-3 h-3 fill-current" />
                           <Star className="w-3 h-3 fill-current" />
                         </div>
-                        <span>(128 Reviews)</span>
+                        <span>(34 Reviews)</span>
                       </div>
                     </div>
                   </div>
@@ -248,10 +248,10 @@ export default function Home() {
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-xs font-bold text-secondary">JM</div>
-                          <span className="font-bold text-xs">John M.</span>
+                          <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-xs font-bold text-secondary">DJ</div>
+                          <span className="font-bold text-xs">David J.</span>
                         </div>
-                        <span className="text-[10px] text-muted-foreground">2 weeks ago</span>
+                        <span className="text-[10px] text-muted-foreground">Apr 2023</span>
                       </div>
                       <div className="flex text-[#FFD700]">
                         <Star className="w-3 h-3 fill-current" />
@@ -261,17 +261,17 @@ export default function Home() {
                         <Star className="w-3 h-3 fill-current" />
                       </div>
                       <p className="text-xs text-secondary leading-relaxed">
-                        Best barbershop in Grosse Pointe. Brenda always gives a great cut and the atmosphere is exactly what a neighborhood shop should be. Highly recommend!
+                        Clean place that gives great haircuts. A hidden gem. This will be my go-to place going forward.
                       </p>
                     </div>
 
                     <div className="space-y-2 pt-4 border-t border-border">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-xs font-bold text-secondary">DS</div>
-                          <span className="font-bold text-xs">David S.</span>
+                          <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-xs font-bold text-secondary">TB</div>
+                          <span className="font-bold text-xs">Thomas B.</span>
                         </div>
-                        <span className="text-[10px] text-muted-foreground">1 month ago</span>
+                        <span className="text-[10px] text-muted-foreground">Nov 2018</span>
                       </div>
                       <div className="flex text-[#FFD700]">
                         <Star className="w-3 h-3 fill-current" />
@@ -281,7 +281,7 @@ export default function Home() {
                         <Star className="w-3 h-3 fill-current" />
                       </div>
                       <p className="text-xs text-secondary leading-relaxed">
-                        Classic barbershop feel. Quick, reasonably priced, and always a consistent cut. They're great with kids too.
+                        Brenda did a great job on my first two cuts, and Leitsa gave my hair more attention than anyone else who ever cut it.
                       </p>
                     </div>
                   </div>
@@ -317,14 +317,14 @@ export default function Home() {
 
                 <div className="grid gap-6">
                   {[{
-                    quote: "Brenda is the best — quick, friendly, and always consistent.",
-                    name: "Local Customer",
+                    quote: "Brenda has been my barber for 34 years. There isn't a distance too great for an appointment with Brenda. She remembers details about her clients and goes out of her way to make everyone feel welcome.",
+                    name: "Loyal Client",
                   }, {
-                    quote: "Clean shop, great conversation, and a perfect cut every time.",
-                    name: "Grosse Pointe Regular",
+                    quote: "The Family Barbershop is special and if you are looking for excellence as well as a great conversation — give Brenda a call — she gets my 5-Star rating.",
+                    name: "Facebook Reviewer",
                   }, {
-                    quote: "Walked in and was taken care of right away. Classic barbershop feel.",
-                    name: "First-Time Visitor",
+                    quote: "Great place, get my and my son's hair cut here!",
+                    name: "Michael W.",
                   }].map((t, idx) => (
                     <div key={idx} className="border border-border bg-white p-6 shadow-sm">
                       <p className="text-secondary font-black uppercase tracking-widest text-[10px] leading-relaxed" data-testid={`text-testimonial-${idx}`}>
