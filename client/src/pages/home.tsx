@@ -210,9 +210,9 @@ export default function Home() {
               <CardContent className="p-10 flex flex-col gap-6 flex-grow">
                 <div className="flex items-start justify-between gap-6">
                   <div>
-                    <h3 className="font-display font-black text-3xl text-secondary uppercase tracking-tighter">Google Reviews</h3>
+                    <h3 className="font-display font-black text-3xl text-secondary uppercase tracking-tighter">Our Reviews</h3>
                     <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest mt-2">
-                      Live reviews widget (paste embed code)
+                      See what people are saying
                     </p>
                   </div>
                   <div className="text-right">
@@ -221,23 +221,22 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="border border-border bg-muted/30 p-6 rounded-none">
-                  <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest leading-relaxed">
-                    Send me your Google Reviews widget embed snippet (or provider + widget ID) and I’ll place the live feed here.
+                <div className="border border-border bg-muted/30 p-6 rounded-none flex-grow flex flex-col justify-center">
+                  <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest leading-relaxed mb-6 text-center">
+                    We've been serving the Grosse Pointe Woods community for years. Check out our reviews online!
                   </p>
-                </div>
-
-                <div className="flex items-center justify-between gap-4 mt-auto">
-                  <a
-                    data-testid="link-google-reviews"
-                    href="https://www.google.com/search?q=The+Family+Barbershop+Grosse+Pointe+Woods+MI+reviews"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary font-black uppercase tracking-widest text-xs underline underline-offset-4 hover:text-secondary transition-colors"
-                  >
-                    View on Google
-                  </a>
-                  <div className="text-muted-foreground uppercase font-black text-[10px] tracking-widest">Updated live</div>
+                  <div className="flex flex-col gap-4">
+                    <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white rounded-none font-black uppercase tracking-widest">
+                      <a href="https://www.google.com/search?q=The+Family+Barbershop+Grosse+Pointe+Woods+MI+reviews" target="_blank" rel="noopener noreferrer">
+                        Read Google Reviews
+                      </a>
+                    </Button>
+                    <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 rounded-none font-black uppercase tracking-widest">
+                      <a href="https://www.facebook.com/share/1DMyQoAv21/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                        Visit our Facebook
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
