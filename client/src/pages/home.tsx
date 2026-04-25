@@ -221,19 +221,81 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="border border-border bg-muted/30 p-6 rounded-none flex-grow flex flex-col justify-center">
-                  <p className="text-muted-foreground uppercase font-bold text-[10px] tracking-widest leading-relaxed mb-6 text-center">
-                    We've been serving the Grosse Pointe Woods community for years. Check out our reviews online!
-                  </p>
-                  <div className="flex flex-col gap-4">
-                    <Button asChild className="w-full bg-primary hover:bg-primary/90 text-white rounded-none font-black uppercase tracking-widest">
-                      <a href="https://www.google.com/search?q=The+Family+Barbershop+Grosse+Pointe+Woods+MI+reviews" target="_blank" rel="noopener noreferrer">
-                        Read Google Reviews
+                <div className="border border-border bg-white rounded-none flex-grow flex flex-col overflow-hidden relative">
+                  {/* Faux Header */}
+                  <div className="bg-[#f0f2f5] p-4 flex items-center gap-3 border-b border-border">
+                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary font-black text-xl">
+                      F
+                    </div>
+                    <div>
+                      <div className="font-bold text-sm text-secondary">The Family Barbershop</div>
+                      <div className="text-[10px] text-muted-foreground flex items-center gap-1">
+                        <span>4.9</span>
+                        <div className="flex text-[#FFD700]">
+                          <Star className="w-3 h-3 fill-current" />
+                          <Star className="w-3 h-3 fill-current" />
+                          <Star className="w-3 h-3 fill-current" />
+                          <Star className="w-3 h-3 fill-current" />
+                          <Star className="w-3 h-3 fill-current" />
+                        </div>
+                        <span>(128 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Faux Review Content */}
+                  <div className="p-6 space-y-6 bg-white flex-grow">
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-xs font-bold text-secondary">JM</div>
+                          <span className="font-bold text-xs">John M.</span>
+                        </div>
+                        <span className="text-[10px] text-muted-foreground">2 weeks ago</span>
+                      </div>
+                      <div className="flex text-[#FFD700]">
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                      </div>
+                      <p className="text-xs text-secondary leading-relaxed">
+                        Best barbershop in Grosse Pointe. Brenda always gives a great cut and the atmosphere is exactly what a neighborhood shop should be. Highly recommend!
+                      </p>
+                    </div>
+
+                    <div className="space-y-2 pt-4 border-t border-border">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <div className="w-8 h-8 bg-muted rounded-full flex items-center justify-center text-xs font-bold text-secondary">DS</div>
+                          <span className="font-bold text-xs">David S.</span>
+                        </div>
+                        <span className="text-[10px] text-muted-foreground">1 month ago</span>
+                      </div>
+                      <div className="flex text-[#FFD700]">
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                        <Star className="w-3 h-3 fill-current" />
+                      </div>
+                      <p className="text-xs text-secondary leading-relaxed">
+                        Classic barbershop feel. Quick, reasonably priced, and always a consistent cut. They're great with kids too.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Faux Footer Actions */}
+                  <div className="p-4 bg-muted/20 border-t border-border flex flex-col gap-3">
+                    <Button asChild className="w-full bg-[#1877F2] hover:bg-[#1877F2]/90 text-white rounded-none font-bold text-xs h-10">
+                      <a href="https://www.facebook.com/share/1DMyQoAv21/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                        View All on Facebook
                       </a>
                     </Button>
-                    <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 rounded-none font-black uppercase tracking-widest">
-                      <a href="https://www.facebook.com/share/1DMyQoAv21/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-                        Visit our Facebook
+                    <Button asChild variant="outline" className="w-full bg-white text-secondary hover:bg-muted rounded-none font-bold text-xs h-10">
+                      <a href="https://www.google.com/search?q=The+Family+Barbershop+Grosse+Pointe+Woods+MI+reviews" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                        View on Google
                       </a>
                     </Button>
                   </div>
