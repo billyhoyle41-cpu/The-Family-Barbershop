@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 // Assets
 import heroBg from "@assets/generated_images/vintage_barber_pole_stripes_texture.png";
-import brendaImg from "@assets/generated_images/friendly_senior_female_barber_portrait.png";
+import brendaImg from "@assets/generated_images/hip_younger_female_barber_long_dark_hair.png";
 import storefrontImg from "@assets/Outside_1_1768358296452.jpg";
 
 export default function Home() {
