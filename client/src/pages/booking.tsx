@@ -1,20 +1,8 @@
 import Layout from "@/components/layout";
 import { Card, CardContent } from "@/components/ui/card";
-import { useEffect } from "react";
 import { Link } from "wouter";
 
 export default function Booking() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://app.briancrossley.com/js/form_embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <Layout>
       <div className="min-h-screen bg-muted/30 py-12 px-4">
@@ -27,14 +15,21 @@ export default function Booking() {
           <Card className="border-none shadow-2xl rounded-none overflow-hidden bg-white">
             <div className="h-2 bg-barber-pole w-full" />
             <CardContent className="p-0">
-              <div className="w-full min-h-[800px]">
-                <iframe 
-                  src="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" 
-                  style={{ width: "100%", height: "800px", border: "none", overflow: "hidden" }} 
-                  scrolling="no" 
-                  id="qyfrHvgNL27l6DS0tPsd_1768752698600"
-                  title="Brenda's Appointments"
-                />
+              <div className="w-full min-h-[700px] flex items-center justify-center p-8 text-center border-4 border-dashed border-muted m-4 bg-muted/10">
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-black text-secondary uppercase tracking-tighter">Google Calendar Integration</h3>
+                  <p className="text-muted-foreground font-bold max-w-md mx-auto">
+                    To use Google Calendar for booking, you'll need to create an "Appointment Schedule" in your Google Calendar account.
+                  </p>
+                  <ol className="text-left text-sm space-y-2 mt-6 max-w-md mx-auto text-secondary/80 font-medium">
+                    <li>1. Open Google Calendar</li>
+                    <li>2. Click <strong>Create</strong> &gt; <strong>Appointment schedule</strong></li>
+                    <li>3. Set up your availability and duration</li>
+                    <li>4. Click <strong>Share</strong> on the appointment page</li>
+                    <li>5. Select <strong>Website embed</strong> and copy the code</li>
+                    <li>6. Paste that code here to replace this placeholder!</li>
+                  </ol>
+                </div>
               </div>
             </CardContent>
           </Card>

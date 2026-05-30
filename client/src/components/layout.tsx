@@ -43,9 +43,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <Button asChild className="bg-primary hover:bg-primary/90 text-white font-black uppercase tracking-widest shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 rounded-none px-8">
-              <a href="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" target="_blank" rel="noopener noreferrer">
+              <Link href="/booking">
                 Book Now
-              </a>
+              </Link>
             </Button>
           </nav>
 
@@ -73,9 +73,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               ))}
               <div className="pt-4">
                 <Button asChild className="w-full bg-primary text-lg h-12 rounded-none uppercase font-black tracking-widest" onClick={() => setIsOpen(false)}>
-                  <a href="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" target="_blank" rel="noopener noreferrer">
+                  <Link href="/booking">
                     Book an Appointment
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

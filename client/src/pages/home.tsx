@@ -54,9 +54,9 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white text-lg px-12 py-8 rounded-none shadow-2xl transition-all hover:-translate-y-1 w-full sm:w-auto font-black uppercase tracking-widest">
-                <a href="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" target="_blank" rel="noopener noreferrer">
+                <Link href="/booking">
                   Book Appointment
-                </a>
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white/40 bg-white/10 text-white hover:bg-white/20 text-lg px-12 py-8 backdrop-blur-md w-full sm:w-auto rounded-none font-black uppercase tracking-widest">
                 <Link href="/contact">
@@ -355,9 +355,9 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center relative z-10 overflow-hidden">
           <h2 className="text-4xl md:text-8xl font-display font-black text-white mb-12 uppercase tracking-tight md:tracking-tighter px-2">Fresh Cut?</h2>
           <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-black text-xl md:text-2xl px-8 md:px-16 py-8 md:py-10 shadow-2xl rounded-none uppercase tracking-widest whitespace-normal h-auto">
-            <a href="https://app.briancrossley.com/widget/booking/qyfrHvgNL27l6DS0tPsd" target="_blank" rel="noopener noreferrer">
+            <Link href="/booking">
               Book Appointment Now
-            </a>
+            </Link>
           </Button>
           <p className="mt-10 text-white/80 font-black uppercase tracking-[0.3em] text-sm">Walk-ins always welcome</p>
         </div>
